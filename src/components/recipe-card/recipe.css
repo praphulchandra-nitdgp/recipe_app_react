@@ -1,0 +1,79 @@
+h1,li,p{
+    color: blanchedalmond;
+}
+a{
+    text-decoration: none;
+}
+.recipes{
+    display: grid;
+    grid-template-columns: repeat(5,minmax(200px,1fr));
+    gap: 30px;
+    margin: 0 80px;
+}
+.recipe-card{
+    position: relative;
+    cursor: pointer;
+    background-color: black;
+    padding:10px;
+    padding-bottom: 0;
+    border-radius: 20px;
+    margin: 20px 0;
+    /* overflow: hidden; */
+}
+.ingredients{
+    display:  none;
+}
+.card-image{
+    border-radius: 10px;
+    width: 100%;
+}
+.recipe-card p{
+    font-size: 14px;
+}
+.recipe-card h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 23px;
+}
+.nutrients{
+    text-align: center;
+}
+.nutrients p{
+    color: rgb(208, 212, 214);
+}
+/*  important part */
+.recipe-card:hover .ingredients { 
+    display: block; 
+    transition: 2s;
+}
+.recipe-card:hover .nutrients {    
+    display: none; 
+    transition: 2s;
+}
+
+
+/* .recipe-card:hover .card-image {
+    filter: blur(3px);
+    pointer-events: none;    
+} */
+.recipe-card:hover{
+    transform: scale(1.03);
+}
+.card-image {
+    transition: filter 0.3s ease;
+}
+.ing-btn {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 15px;
+    font-size: 22px;
+    color: rgb(46, 45, 45);
+    background-color: rgba(250, 250, 248, 0.7);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}

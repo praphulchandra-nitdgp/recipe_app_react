@@ -1,0 +1,46 @@
+h1,a,p{
+    color: white;
+}
+h1,p{
+    text-align: center;
+}
+footer{
+    position: relative;
+}
+.footer-container{
+    height: 200px;
+    background-color: black; 
+    padding: 20px 0;
+}
+.footer-container .links{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35px;
+
+}
+.footer-container li{
+    list-style: none;
+    font-size: 20px;
+}
+.footer-container a:hover{
+    color: rgb(139, 237, 237);
+    transition: 0.3s;
+}
+.brand{
+    font-size: 40px;
+    margin: 15px 0;
+    color: aqua;
+}
+.brand span{
+    color: rgb(15, 147, 218);
+    text-decoration: underline;
+}
+.follow h1{
+    font-size: 25px;
+}
+p{
+    font-size: 15px;
+}
+
