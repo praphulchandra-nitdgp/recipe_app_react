@@ -11,9 +11,9 @@ function Footer() {
         <div className="follow">
             <h1>Follow Us</h1>
             <ul className="links">
-                <li><a href=""><FontAwesomeIcon icon={faFacebookF}/></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faInstagram}/></a></li>
-                <li><a href=""><FontAwesomeIcon icon={faTwitter}/></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100011406948979"><FontAwesomeIcon icon={faFacebookF}/></a></li>
+                <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram}/></a></li>
+                <li><a href="#"><FontAwesomeIcon icon={faTwitter}/></a></li>
             </ul>
         </div>
         <p className="copyright">© Since 2024, By G.Praphul Chandra</p>

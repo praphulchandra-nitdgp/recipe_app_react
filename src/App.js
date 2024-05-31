@@ -39,11 +39,10 @@ function App() {
 
   const getSearch = e => {
     e.preventDefault();
-    if (search.trim() === '') {
+    if (search.trim() === "") {
       alert('Search is empty. Please enter a search term.');
     } else {
       setQuery(search);
-      setSearch('');
     }
   };
   
