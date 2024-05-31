@@ -3,18 +3,7 @@ import "./recipe.css"
 
   
 const Recipe = ({ url, title, energy, cholestrol, fats, sugar, calories, image, ingredients }) => { 
-    // const APP_ID = 'a52b4d43';
-    // const APP_KEY = 'e0e5c667605f5e91d8275c973531b80a';
-    // const [recipes, setRecipes] = useState([]);
-
-    // const getRecipes = async () => {
-    //     const response = await fetch(
-    //       `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
-    //     );
-    //     const data = await response.json();
-    //     setRecipes(data.hits);
-    //     console.log(data.hits);
-    //   };
+    
     const handleCardClick = () => {
         window.location.href = url;
     };

@@ -11,7 +11,7 @@ function App() {
   const APP_ID = 'a52b4d43';
   const APP_KEY = 'e0e5c667605f5e91d8275c973531b80a';
   const [recipes, setRecipes] = useState([]);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState('chicken');
   const [search, setSearch] = useState('');
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function App() {
     );
     const data = await response.json();
     setRecipes(data.hits);
-    console.log(data.hits);
+
   };
 
   const updateSearch = e => {
@@ -64,7 +64,7 @@ function App() {
       <div className="recipes">
         {recipes.map(recipe => (
           <Recipe
-            key={recipe.recipe.label}
+            key={recipe.recipe.uri}
             title={recipe.recipe.label}
             energy={recipe.recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)}
             cholestrol={recipe.recipe.totalNutrients.CHOLE.quantity.toFixed(2)}
