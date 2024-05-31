@@ -23,11 +23,14 @@ function App() {
   const getRecipes = async () => {
     const response = await fetch(
       `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
-      // https://api.edamam.com/api/recipes/v2/by-uri?uri=string&app_id=abc&app_key=aba
     );
     const data = await response.json();
-    setRecipes(data.hits);
-
+    if(data.hits.length === 0){
+      alert('No recipe found, please try a different search item.');
+    }
+    else{    
+      setRecipes(data.hits);
+    }
   };
 
   const updateSearch = e => {
@@ -36,8 +39,12 @@ function App() {
 
   const getSearch = e => {
     e.preventDefault();
-    setQuery(search);
-    setSearch('');
+    if (search.trim() === '') {
+      alert('Search is empty. Please enter a search term.');
+    } else {
+      setQuery(search);
+      setSearch('');
+    }
   };
   
   return (
