@@ -16,7 +16,7 @@ const Navbar = ({ updateSearch, getSearch, search }) => {
         <button className={`navbar-menu-btn ${isMenuOpen ? 'hidden' : ''}`} id="menu-btn" onClick={toggleMenu} >
           <i className='fa-bars'><FontAwesomeIcon icon={faBars}/></i>
         </button>
-        <button className={`navbar-menu-close-btn ${isMenuOpen ? '' : 'hidden'}`} id="close-btn" onClick={toggleMenu} style={{ display: isMenuOpen ? 'block' : 'none' }}>
+        <button className={`navbar-menu-close-btn `} id="close-btn" onClick={toggleMenu} style={{ display: isMenuOpen ? 'block' : 'none' }}>
           <i className='fa-times'><FontAwesomeIcon icon={faTimes}/></i>
         </button>
 
